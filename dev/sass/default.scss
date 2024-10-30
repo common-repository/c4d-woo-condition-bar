@@ -1,0 +1,33 @@
+.c4d-woo-cb {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #000;
+	&__success {
+		display: none;
+	}
+	&__achive {
+		display: none;
+	}
+	&__promotion {
+
+	}
+	&.achive {
+		& .c4d-woo-cb__achive {
+			display: block;
+		}	
+		& .c4d-woo-cb__promotion {
+			display: none;
+		}
+	}
+	&.success {
+		color: green;
+		border-color: green;
+		& .c4d-woo-cb__achive,
+		& .c4d-woo-cb__promotion {
+			display: none;
+		}
+		& .c4d-woo-cb__success {
+			display: block;
+		}
+	}
+}
